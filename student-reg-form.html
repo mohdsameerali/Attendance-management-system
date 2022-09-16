@@ -1,0 +1,140 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="login-clg.css">
+	<title></title>
+</head>
+<body>
+	<div class="col-12 heading text-center">Attendence Management System</div>
+	<div class="container">
+	    <div class="row">
+	    	
+		    <div class="col-12 text-center  "><h3> Faculty Registration</h3></div1>
+            <div class="col-12"><input type="text" class="name" name="name" placeholder="Full Name" value="" ></div>
+		    <div class="col-12"><input type="text"class="name" name="name" placeholder="Mobile" value="" ></div>
+		    <div class="col-12"><input type="date" class="name" name="name" placeholder="Birth Date" value="" ></div>
+		    <div class="col-12"><input type="text" class="name"name="name" placeholder="Qualification" value="" ></div>
+		    <div class="col-12"><input type="text"class="name" name="name" placeholder="User Name" value="" ></div>
+		    <div class="col-12"><input type="text"class="name" name="name" placeholder="User ID" value="" ></div>
+		    <div class="col-12"><input type="Password"class="name" name="name" placeholder="Password" value="" ></div>
+	     	<a href="myproject.html"><div class="col-12"><input type="button" class="button"name="name" value="Register" ></div></a>
+		    <a href=""><div class="col-12"><input type="button"class="button" name="name" value="Back" ></div></a>
+		    </div>
+
+	    
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="student-reg-form.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script   src="js/jquery.js"></script>
+  <script  src="js/bootstrap.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<div class="heading">
+		<h1>Students  Attendance Management System</h1>
+	</div>
+<div class="container">
+<div class="main">
+	<h1>Faculty  Registration</h1>
+</div>	
+
+<form class="needs-validation" novalidate>
+    <div class="form-row">
+        <div class="col-md-8 offset-2 mb-3">
+            <input type="text" class="form-control " id="validationCustom01" placeholder="First Name" value="" required>
+            <div class="valid-feedback">Looks good</div>
+        </div>
+       <div class="col-md-8 offset-2 mb-3">
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Last Name" value="" required>
+            <div class="valid-feedback">Looks good</div>
+        </div>
+
+        <div class="col-md-8 offset-2 mb-3">
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Mobile Number" value="" required>
+            <div class="valid-feedback">Enter At least 10 Digit Number</div>
+        </div>
+
+         <div class="col-md-8 offset-2 mb-3">
+            <input type="date" class="form-control" id="validationCustom01" value="" required>
+            <div class="valid-feedback">Looks good</div>
+        </div>
+         <div class="col-md-8 offset-2 mb-3">
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Department" value="" required>
+            <div class="valid-feedback">Looks good</div>
+        </div>
+         
+         <div class="col-md-8 offset-2 mb-3">
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Create Password" value="" required>
+            <div class="valid-feedback">Looks good</div>
+        </div>
+         <div class="col-md-8 offset-2 mb-3">
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Conform Password" value="" required>
+            <div class="valid-feedback">Looks good</div>
+        </div>
+        <!-- <div class="    offset-3 col-md-3 mb-3">
+            <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+            <div class="valid-feedback">Looks good!</div>
+        </div> -->
+    </div>
+ <!--    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">Please provide a valid city.</div>
+        </div> 
+    </div> -->
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input   checkbox-large" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+            <div class="invalid-feedback">You must agree before submitting.</div>
+        </div>
+    </div>
+    <div class="butt">
+    <button class="btn btn-primary mt-5" type="submit">Submit form</button>
+    </div>
+</form>
+</div>
+<!--------------------------------------------------------------------javascript start----------------------------------------------------------------- -->
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+
+</body>
+</html>

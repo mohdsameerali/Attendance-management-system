@@ -1,0 +1,93 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+}
+html{
+	font-size: 62.2;
+}
+
+
+
+.navbar{
+	background-color: darkorchid;
+	font-family: "Lucida Console", "Courier New", monospace;
+
+
+}
+
+.navbar-collapse{
+	display: flex;
+	justify-content:center ;
+	align-items: center;
+}
+.nav-link {
+	margin-right: 2rem;
+	
+}
+ .nav-link :hover{
+ 	font-size: 300px;
+
+}
+
+
+i{
+	font-weight: lighter;
+	color: white;
+}
+/*.col-12{
+	background-image: url("images/college.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+		width: %;
+	height: 100vh;
+}*/
+
+.col-12 img{
+	width: 100vw;
+	height: 100vh;
+}
+h1{
+	color: darkred;
+}
+
+
+/*ul li a{
+    box-shadow: 0 1rem 2rem rgba(0,0,2,.2);
+    border-radius: 10px;
+
+}*/
+ul li a:hover {
+
+	background-color:orange;
+	border-radius: 10px;
+	
+}
+
+.cont{
+	
+	
+	height: 100vh;
+}
+.btn{
+
+	margin-left: 200px;
+    box-shadow: 0 1rem 2rem rgba(0,0,2,.2);
+
+
+}
+
+
+@media screen and (max-width:1000px ){                            
+        .myscreen{
+                     max-width:900px;
+                      height: ;
+}
+    }
+
+
+
+
+
+
